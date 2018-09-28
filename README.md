@@ -1,5 +1,6 @@
 # RecyclerViewPager
 像RecyclerView一样支持ViewType的ViewPager
+这个东西是使用kotlin编写的，所以你的项目必须引入kotlin，不然是没法正常使用的。推荐你也使用kotlin，因为java调用这个框架的话，方法名参数名等可能会有些奇怪
 ### 特点
 - 像RecyclerView一样支持控件重用和ViewType
 - 数据适配器的方法和使用方式跟RecyclerView一模一样
