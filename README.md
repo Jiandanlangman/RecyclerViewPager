@@ -1,6 +1,6 @@
 # RecyclerViewPager
-像RecyclerView一样支持ViewType的ViewPager
-这个东西是使用kotlin编写的，所以你的项目必须引入kotlin，不然是没法正常使用的。推荐你也使用kotlin，因为java调用这个框架的话，方法名参数名等可能会有些奇怪
+像RecyclerView一样支持ViewType的ViewPager  
+这个东西是使用kotlin编写的，所以你的项目必须引入kotlin，不然是没法正常使用的。推荐你也使用kotlin，因为java调用这个框架的话，方法名参数名等可能会有些奇怪  
 ### 特点
 - 像RecyclerView一样支持控件重用和ViewType
 - 数据适配器的方法和使用方式跟RecyclerView一模一样
@@ -25,7 +25,7 @@
     implementation "com.jiandanlangman:recyclerviewpager:1.0.1@aar"
     ```
 ### API说明
-- 主类
+- 主类  
     主类的路径如下：
     ```
     com.jiandanlangman.recyclerviewpager.widget.RecyclerViewPager
@@ -42,8 +42,8 @@
     fun setAdapter(adapter: android.support.v4.view.PagerAdapter?)
     ```
     其它方法和ViewPager无异
-- ViewHolder
-    这个ViewHolder的存在意义参照RecyclerView的ViewHolder
+- ViewHolder  
+    这个ViewHolder的存在意义参照RecyclerView的ViewHolder  
     默认的ViewHolder声明路径如下：
     ```
     com.jiandanlangman.recyclerviewpager.widget.RecyclerViewPager.ViewHolder
@@ -52,8 +52,8 @@
     ```
     open class ViewHolder(val itemView: View)
     ```
-- Adapter
-    Adapter的公开方法和RecyclerView.Adapter一样，使用方式也和RecyclerView.Adapter一样
+- Adapter  
+    Adapter的公开方法和RecyclerView.Adapter一样，使用方式也和RecyclerView.Adapter一样  
     Adapter的声明路径如下：
     ```
     com.jiandanlangman.recyclerviewpager.widget.RecyclerViewPager.Adapter
@@ -73,7 +73,7 @@
         open fun getItemViewType(position: Int): Int
     }
     ```
-- 自动滚动帮助类
+- 自动滚动帮助类  
     自动滚动帮助类的声明路径如下：
     ```
     com.jiandanlangman.recyclerviewpager.util.ViewPagerAutoScrollHelper
